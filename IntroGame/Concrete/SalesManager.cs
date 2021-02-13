@@ -10,6 +10,7 @@ namespace IntroGame.Concrete
     {
         public void Add(Sales sales)
         {
+
             if (sales.campaign != null)
             {
                 Console.WriteLine(sales.personGamer.FirstName + " " + sales.personGamer.LastName + " " + sales.game.GameName + " adlı oyunu " + ((sales.game.GamePrice * (100 - sales.campaign.Discount)) / 100) + " TL'ye satın aldı.");
